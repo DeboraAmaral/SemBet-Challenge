@@ -1,0 +1,203 @@
+{
+  "id": "eb8dc4b1-df07-4f5a-87d6-d69db1e01747",
+  "version": "2.0",
+  "name": "SemBet Automation Tests",
+  "url": "http://localhost:8000/semBet_simple.html",
+  "tests": [{
+    "id": "3331a54a-2080-4489-8bd6-637ca83adaab",
+    "name": "ATA-01 - Popup do Plugin",
+    "commands": [{
+      "id": "64c11e32-2487-4df0-86df-2f5c6b9ced76",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/semBet_simple.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747f1288-cae0-4f6f-804d-da2cc357366d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8609045-71c8-4b54-88b7-2bb9646c4e92",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "053bc67d-44e9-4dd7-b580-cd8e28189834",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad7a4757-d693-4419-b9cb-24183024b3e5",
+    "name": "ATA-02 - Histórico",
+    "commands": [{
+      "id": "3cb12893-35fa-4fbc-8ecd-1b07b17b86ac",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/semBet_simple.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4816318-b7d7-431e-8872-b2e4a1cd8c35",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e79286a-d92f-49ca-ad65-e687e19e38d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .btn:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(2) > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@onclick=\"showSection('history')\"]", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'HistÃ³rico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "937b07d0-be7b-4c3f-99c0-fda3671273ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='history']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'bet365.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8e655cf6-9b9d-4ae4-82bb-1091baf5c514",
+    "name": "ATA-03 - Página de Bloqueio",
+    "commands": [{
+      "id": "1d5f0e52-99db-410b-9234-3d5902858f2b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/semBet_simple.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d441e4a3-c1f7-40a5-b218-b704e9a43b0f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1ba8e9f-e444-4158-a763-9b8e0e43c935",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick=\"showSection('blocked')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'PÃ¡gina Bloqueio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11f0c80f-afdb-4838-9a4b-9eb81a8b8a70",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b8976d3-16d5-47c8-9174-05a04e9ba93b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#blocked > p",
+      "targets": [
+        ["css=#blocked > p", "css:finder"],
+        ["xpath=//div[@id='blocked']/p", "xpath:idRelative"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Site: bet365.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "15c1e365-084c-48fe-9602-985575ffe5fb",
+    "name": "ATA-04 - Navegação",
+    "commands": [{
+      "id": "3f5cf860-fd47-4b34-9605-f24501d33456",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/semBet_simple.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95ff4603-857a-41ce-8982-f05dd83f0097",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d97ef5db-195b-4812-9b1f-d1fe8d0fc480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick=\"showSection('blocked')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'PÃ¡gina Bloqueio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8669c0d-8f11-4d81-9e36-0b31fcb8ee39",
+      "comment": "",
+      "command": "click",
+      "target": "css=#blocked > .btn",
+      "targets": [
+        ["css=#blocked > .btn", "css:finder"],
+        ["xpath=//div[@id='blocked']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e7bd33-7a70-4229-bd03-3efba8dee754",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick=\"showSection('popup')\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Popup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7bd6021f-7a6b-46ec-a300-a04bf0596d79",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3331a54a-2080-4489-8bd6-637ca83adaab"]
+  }],
+  "urls": ["http://localhost:8000/semBet_simple.html"],
+  "plugins": []
+}

@@ -1,5 +1,8 @@
 # SemBet-Challenge - Plugin de Combate ao Vício em Apostas
 
+> **📌 ENTREGA OFICIAL - BRANCH DEVELOP**
+> *Esta branch contém a versão de entrega do projeto para correção.*
+
 ## 📋 Sobre o Projeto
 O **SemBet-Challenge** é um plugin de navegador desenvolvido para combater o vício em apostas online, bloqueando proativamente o acesso a sites de apostas e fornecendo ferramentas de monitoramento para o usuário.
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SemBet Simulator</title>
+    <style>
+        .btn { margin: 5px; padding: 10px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>SemBet Simulator - Testes</h1>
+    
+    <!-- Controles -->
+    <div>
+        <button class="btn" onclick="showSection('popup')">Popup</button>
+        <button class="btn" onclick="showSection('blocked')">Página Bloqueio</button>
+        <button class="btn" onclick="showSection('history')">Histórico</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup">
+        <h2>Popup do Plugin</h2>
+        <p id="status">✅ Plugin Ativo</p>
+        <p>Bloqueios: <span id="count">3</span></p>
+        <button class="btn">Ver Histórico</button>
+    </div>
+
+    <!-- Página Bloqueio -->
+    <div id="blocked" class="hidden">
+        <h2>🚫 ACESSO BLOQUEADO</h2>
+        <p>Site: <span id="url">bet365.com</span></p>
+        <button class="btn">Voltar</button>
+    </div>
+
+    <!-- Histórico -->
+    <div id="history" class="hidden">
+        <h2>Histórico</h2>
+        <ul>
+            <li>bet365.com</li>
+            <li>bets.com</li>
+        </ul>
+        <button class="btn">Voltar</button>
+    </div>
+
+    <script>
+        function showSection(section) {
+            document.getElementById('popup').classList.add('hidden');
+            document.getElementById('blocked').classList.add('hidden');
+            document.getElementById('history').classList.add('hidden');
+            document.getElementById(section).classList.remove('hidden');
+        }
+        showSection('popup');
+    </script>
+</body>
+</html>
